@@ -1,0 +1,6 @@
+apiVersion: tekton.dev/v1
+metadata:
+  name: first-run
+spec:
+  taskRef:
+    name: example-task
