@@ -1,0 +1,10 @@
+apiVersion: tekton.dev/v1 # or tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: example-task
+spec:
+  steps:
+    - name: ubuntu-example
+      image: ubuntu
+      script: |
+{{ .Files.Get "start.sh" | indent 8 }}
