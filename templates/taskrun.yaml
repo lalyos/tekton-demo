@@ -1,4 +1,5 @@
 apiVersion: tekton.dev/v1
+kind: TaskRun
 metadata:
   name: first-run
 spec:
